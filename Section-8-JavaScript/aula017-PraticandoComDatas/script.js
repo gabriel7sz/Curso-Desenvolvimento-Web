@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praticando com datas | JavaScript</title>
-
-    <script>
-
-
-        // /*
+// /*
         //     var data = new Date()
 
         //     /*
@@ -90,30 +79,3 @@
 
         document.write('<br><br><hr />')
         document.write('A diferença entre: data1 e data2 é de: ' + Math.ceil((milissegundos_entre_datas / milissegundos_por_dia)) + ' dia(s).')
-
-    </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</head>
-
-<body>
-
-</body>
-
-</html>
