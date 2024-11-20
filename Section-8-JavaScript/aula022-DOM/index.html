@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+   
+
+</head>
+
+<body>
+    <div id="container">
+        <h1> DOM - Document Obeject Model</h1>
+        <p>
+            É um API multiplataforma que permite o acesso através do JS
+            a todos os elementos HTML que fazem parte da nossa página.
+            Ou seja, é através da API do DOM que consiguiremos ACESSAR e
+            MODIFICAR os elementos HTML da página WEB.
+        </p>
+        <p>
+            Todos os elementos HTML quando interpretados pelo browser, ficam
+            organiazados em um objeto document, sendo que essa organização
+            segue uma representação análoga ao de uma árvore. Onde os elementos
+            pais encapsulam os elementos filhos, de tal modo a estabelecer trajetos
+            bem específicos para alcançar qualquer um dos elementos que constituem a
+            página. Isso tudo nada mais é que a ÁRVORE DE ELEMENTOS DO DOM.
+        </p>
+        <p>
+            obs: Cada elemento HTML representado no DOM é chamado de NÓ ou NODE
+            em inglês.
+        </p>
+
+        <h1>Selecionando elementos na página HTML</h1>
+        <p>
+            Para fazer a seleção de algum elemento no DOM, temos alguns métodos da API do
+            DOM acessíveis a partir do objeto DOCUMENT.
+        </p>
+        <p>
+            Métodos:
+        <ul>
+            <li>
+                get.ElementById()
+            </li>
+            <li>
+                get.ElementsByTagName()
+            </li>
+            <li>
+                get.ElementsByClassName()
+            </li>
+            <li>
+                get.ELementsByName()
+            </li>
+        </ul>
+        </p>
+        <p>
+            Sabendo-se que os elementos HTML estão obdecendo uma hierarquia em sua árvore,
+            podemos a partir dos atributos desses elementos, fazer a sua respectiva seleção.
+        </p>
+        <p>Por exemplo: Um imput com os seguintes atributos:
+        <ol>
+            <li>
+                type="text"
+            </li>
+            <li>
+                placeholder="Digite seu nome"
+            </li>
+            <li>
+                id="nome_usuario"
+            </li>
+            <li>
+                class="campo_texto"
+            </li>
+            <li>
+                name="nome"
+            </li>
+            <p>
+                <input type="text" placeholder="Digite seu nome" id="nome_usuario" class="campo_texto" name="nome">
+            </p>
+        </ol>
+        Nesse caso, o método usado em 85% dos casos, o get.documentById(), seleciona um
+        elemento HTML a partir da propriedade ID. (Nesse caso "nome_usuario")
+        </p>
+        <p>
+            Dando um console.log(document.getElementById('nome_usuario')), conseguimos visualizar
+            que a seleção é feita no console. (Lembrando que passamos o parâmetro com o <b>nome</b>
+            do ID do nosso Input)
+        </p>
+        <p>
+            O mesmo vale para os outros métodos.. Por exemplo o método get.EelementByTagName(), a diferença
+            entre eles será o parâmetro passado, nesse caso será o nome da tag, input. Ficando:
+            document.getElementsByTagName('input'). {Sem esquecer as aspas ""}
+        </p>
+
+        <h1>Manipulando valores de inputs (text)</h1>
+
+        <p>
+            A idéia é selecionar os elementos do tipo text a partir do objeto document,
+            utilizando alguns dos métodos de seleção disponíveis na API e posteriormente
+            afetar valores destes campos.
+        </p>
+        <p>
+            <hr>
+            POR EXEPMLO: o desafio seria escrever um caractere no imput a baixo, para
+            conseguirmos recuperar o dado e decidir se ele esse caractere seria letra ou
+            número. E mostrar ele nos inputs corretos. FAÇA OS TESTES!:
+        <p>
+            <input type="text" placeholder="Digite um caractere aqui" onkeyup="distribuiCaracter()" id="entrada">
+
+        </p>
+
+        <hr>
+        <span>Letras:</span>
+        <input type="text" disabled id="apenas_letras">
+
+        <span>Números</span>
+        <input type="text" disabled id="apenas_numeros">
+        </p>
+
+        <h1>Manipulando estilos de elementos</h1>
+
+        <p>
+            Esse estilo de prática, é muito interessante, pois podemos fazer
+            a página web responder visualmente falando a partir de interações
+            na aplicação do usuário.
+        </p>
+        <p>
+            Por exemplo uma página que tenha três botões que façam alternar a cor
+            do background de uma área.
+        </p>
+
+        <button type="button" onclick="modifica_estilo('#ff0000')">Vermelho</button>
+        <button type="button" onclick="modifica_estilo('#00ff00')">Verde</button>
+        <button type="button" onclick="modifica_estilo('#0000ff')">Azul</button>
+
+        <hr>
+
+        <div id="quadrado" style="border: 1px solid #000; width: 100px; height: 100px;">
+
+        </div>
+
+        <p>O mesmo poderia valer para modificarmos por exemplo, largura e altura.</p>
+
+
+        <button type="button" onclick="modifica_tamanho('200px', '20px')">
+            Width 200 Height 20
+        </button>
+        <button type="button" onclick="modifica_tamanho('150px', '80px')">
+            Width 150 Height 80
+        </button>
+        <button type="button" onclick="modifica_tamanho('300px', '300px')">
+            Width Height 300
+        </button>
+
+        <hr>
+
+        <div id="quadrado2" style="border: 1px solid #000; width: 100px; height: 100px;">
+
+        </div>
+
+        <h1>Manipulando classes de elementos</h1>
+
+        <p>
+            Nesse caso, será praticamente a mesma coisa.
+            Com a diferença que aplicaríamos o atributo <br>.className = 'nome da classe' ,<br>
+            que já está estilizada no CSS.
+        </p>
+        <p>
+            Muito utilizado para a autenticação de formulários, onde temos a classe
+            campo válido e campo inválido e dependendo da situação do campo, poderíamos
+            aplicar um estilo ou outro.
+        </p>
+
+
+        <div id="mensagem" class="estilo1">
+            Modificando a classe do elemento
+        </div>
+        <hr>
+        <button type="button" onclick="modificaClasse()">
+            Aplicar classe
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
