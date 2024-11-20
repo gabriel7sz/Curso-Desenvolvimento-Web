@@ -1,0 +1,18 @@
+#caixa {
+    width: 300px;
+    height: 300px;
+    padding: 8px;
+    margin: 20px;
+    background: #009670;
+    box-shadow: 20px 20px 5px black;                                  /*Ao utilizar esta propriedade conseguimos aplicar sombras em div
+                                                        Podemos utilizar a mesma estrutura igualmente ao da propriedade
+                                                                            text-shadow*/
+}
+
+#caixa h1 {
+    color: white;
+    text-shadow: 10px 10px 3px rgba(0, 0, 0, 0.6);   /*Ao utilizar esta propriedade podemos aplicar uma sombra em um texto. 
+                                                      EX: text-shadow: horizontal vertical cor(codigo decimal, rgb rgba);
+                                                     Tambem podemos colocar um terceiro valor para adicionar um bluor no texto.
+                                                               Ex: text-shadow: 10px 10px 5px black;  */
+}

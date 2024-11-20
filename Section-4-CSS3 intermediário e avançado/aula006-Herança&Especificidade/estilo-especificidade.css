@@ -1,0 +1,57 @@
+/**********************************
+Heranca e Especificidade */
+
+
+/* NO CASO DE DOIS SELETORES IGUAIS SEMPRE O ÚLTIMO
+				SERÁ APLICADO. /*
+
+
+/* COM EXCESSÃO DO !IMPORTANT, QUE DIRÁ
+QUAL PROPRIEDADE É MAIS IMPORTANTE */
+
+
+/*Exemplos:
+
+p {
+	color: blue;         	
+
+} 
+
+p {
+	color: red;
+}
+
+p{
+	color: yellow; !important
+}
+
+*/
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+
+SE UM SELETOR FOR MAIS ESPECÍFICO QUE OUTRO A REGRA MAIS ESPECÍFICA
+SERÁ APLICADA ( TERÁ PROCEDÊNCIA SOBRE REGRAS MAIS GERAIS. )*/
+
+
+/*Exemplos: 
+
+* {
+	color: red;
+}
+
+h2{
+	color: blue;
+}
+
+h2.verde{
+	color: green;
+}
+
+h2#amarelo {
+	color: yellow;
+}
+
+*/
+
+

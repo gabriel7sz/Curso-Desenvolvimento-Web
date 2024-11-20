@@ -1,0 +1,41 @@
+#conteudo {
+    background: #dcdcdc;
+    height: 600px;
+    display: flex;
+
+    
+    /*DEFINE O ALINHAMENTOS DOS ELEMENTOS: flex-direction: */
+    /*
+    row | row-reverse | column | colunm-reverse
+    */
+    
+    flex-direction: row;
+
+    /*DEFINE SE OS ITENS QUE ESTAO DENTRO DO CONTAINER IRAO QUEBRAR: flex-wrap: */
+    /*
+    nowrap | wrap | wrap-reverse
+    */
+
+    flex-wrap: nowrap;
+
+    /*DEFINE OS ALINHAMENTOS HORIZONTAIS DOS ELEMENTOS: justify-content: */
+    /*
+    flex-satart | flex-end | center | space-between | space-around
+    */
+
+    justify-content: center;
+
+    /*DEFINE OS ALINHAMENTOS VERTICAIS DOS ELEMENTOS: align-itens: */
+    /*
+    strech | center | flex-start | flex-end | baseline
+    */
+    align-items: center;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background: white;
+    border: 1px solid gray;
+}
