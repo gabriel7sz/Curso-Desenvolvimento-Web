@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 006</title>
+</head>
+<body>  
+
+    <!-- 
+        1) Crie uma aplicação web contendo um campo para entrada de texto (input text) e dois 
+        botões (buttons), sendo um botão com a descrição "Adicionar" e outro com a descrição 
+        "Ordenar" 
+
+        Após criar os elementos de interação com o usuário acima, crie um Array de nome objetos contendo 
+        os seguintes valores: 
+        var objetos = Array('Cadeira', 'Impressora', 'Garfo')
+    -->
+
+    <!-- 
+
+        Os próximos passos são:
+        A) Ao clicar no botão "Adicionar" disparar função que irá
+        Recuperar o valor contido no campo de texto.
+
+        Verificar se o valor está vazio ou preenchido.
+
+        Se vazio, exibir alert com a mensagem "Informe um valor válido".
+
+        Se preenchido:
+        Verificar se o valor informado já existe dentro do Array objetos.
+        Se existir, exibir alert com a mensagem "Objeto já foi adicionado"
+
+        Se não existir:
+        Incluir o valor preenchido no campo dentro do Array
+        Efetuar um console.log do Array para debug (checar se está 
+        funcionado)
+        Limpar o valor contido no campo de entrada de texto
+
+        B) Ao clicar no botão "Ordenar" disparar função que irá:
+        Ordenar de forma alfabética os valores do Array de objetos.
+        Efetuar um console.log do Array para debug (checar se está funcionado)
+
+     -->
+
+
+     <h3>Exercicio 006</h3>
+
+     <input type="text" id="campo">
+
+     <button onclick="adicionarObjetos()" type="button">Adicionar</button>
+     <button onclick="ordenarObjetos()" type="button">Ordenar</button>
+
+
+    
+    <script defer>
+
+       var lista = []
+        lista[0] = 'cadeira'
+        lista[1] = 'impressora'
+        lista[2] = 'garfo'
+
+        function adicionarObjetos() {
+            
+            var objeto = document.getElementById('campo').value
+
+            if (objeto != '') {
+
+                if (lista.indexOf(objeto) !== -1 ) {
+                    alert('Objeto já foi adicionado')
+
+                } else {
+
+                    lista.push(objeto)
+                    console.log(lista)
+
+                    document.getElementById('campo').value = ''
+
+                }
+
+            } else {
+
+                alert('Informa um objeto válido')
+
+            }
+        }
+
+        function ordenarObjetos() {
+
+            lista.sort()
+            console.log(lista)
+
+        }
+
+
+    </script>
+</body>
+</html>
