@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Object Model</title>
+
+    <style>
+
+        body {
+            height: 10000px; 
+            /* height para permitir o scroll*/
+        }
+
+        button {
+            padding: 20px;
+            border-radius: 3px;
+            border-color: black;
+            background-color: #345;
+            color: #fff;
+        }
+
+    </style>
+    
+
+</head>
+<body>
+    
+    <h3>open() & close()</h3>
+    <button onclick="abrirPopUp()" type="button">Abrir Janela</button>
+    <button onclick="fecharPopUp()" type="button">Fechar Janela</button>
+    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <hr>
+    
+    <h3>AddEventistner()</h3>
+    <button id="btn">Ficar Vermelho</button>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <hr>
+
+    <h3>print()</h3>
+    <button onclick="imprime()" id="btn-print">Imprimir</button>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <hr>
+
+    <h3>prompt()</h3>
+    <p id="paragafro"></p>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <hr>
+
+    <h3>innerHTML</h3>
+    <input type="text" placeholder="Informe Um Texto" id="textoValor">
+
+    <button onclick="minhaFuncao()">innerHTML</button>
+
+    <div id="resultado">
+
+    </div>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <hr>
+
+    <h3>btoa()</h3>
+    <p id="meuParagrafo"></p>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <hr>
+
+    <h3>atob()</h3>
+    <p id="meuParagrafoDois"></p>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <hr>
+
+    <h3>confirm()</h3>
+    <p>Click the button to display a confirm box.</p>
+
+    <button onclick="tryIt()">Try it</button>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+     <hr>
+
+    <h3>setTimeout()</h3>
+    <p>Wait a 5 seconds for the greeting</p>
+    <p id="timeParagrafo"></p>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+     <hr>
+
+    <h3>scrollTo()</h3>
+     <button type="button" onclick="rolarParaBaixo()">
+            Scrolle Aqui
+     </button>
+
+
+    <!-- fim HTML -->
+    
+    <script src="script.js">
+        
+    </script>
+    
+</body>
+
+</html>

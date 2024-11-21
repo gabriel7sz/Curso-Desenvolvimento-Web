@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM location</title>
+
+    <style>
+
+    </style>
+</head>
+<body>
+    
+    <h2>Método location.href</h2>
+    <p>Força o rediresionamento da página;</p>
+    <button onclick="window.location.href = 'http://www.google.com'" type="button">Acessar Google</button>
+    <button onclick="window.location.href = 'http://www.spotify.com'" type="button">Acessar Spotify</button>
+
+    <h2>Método location.host</h2>
+    <p>A propriedade location.host retorna o host (endereço IP ou domínio) e a porta de uma URL.</p>
+    
+    <div id="testeHost"></div>
+
+    <h2>Método location.hostname</h2>
+    <p>
+        A location.hostnamepropriedade retorna o host (endereço IP ou domínio) de uma URL.
+
+        A location.hostname propriedade também pode ser definida para navegar para o mesmo URL com um novo nome de host.
+    </p>
+   <div id="testeHostName"></div>
+
+    <h2>Método location.origin</h2>
+    <p>
+        A origin propriedade retorna o protocolo, o nome do host e o número da porta de uma URL.
+
+        A origin propriedade é somente leitura.
+    </p>
+    <div id="testeOrigin"></div>
+
+    <h2>Método location.pathname</h2>
+    <p>A pathname propriedade define ou retorna o caminho de uma URL (página).</p>
+    <div id="testePathName"></div>
+
+    <h2>Método location.port</h2>
+    <p>A port propriedade define ou retorna o número da porta de um URL.</p>
+    <p><b>Note:</b>Se o número da porta for padrão (80 para http e 433 para https), a maioria dos
+    navegadores não retornará nada.</p>
+    <div id="testePort"></div>
+
+    <h2>Método protocol</h2>
+    <p>
+        A propriedade protocol define ou retorna o protocolo da URL atual, incluindo os dois pontos (:).
+
+        O protocolo é um padrão que especifica como os dados são transmitidos entre computadores.
+    </p>
+    <div id="testeProtocolo"></div>
+
+    <h2>Método location.search</h2>
+    <p>
+        A search propriedade retorna a parte da string de consulta de uma URL, incluindo o ponto de interrogação (?).
+
+        A search propriedade também pode ser usada para definir a string de consulta.
+    </p>
+
+    <p><a id="endereco" href="http://www.google.com">oi</a></p>
+    
+    <div id="testeSearch"></div>
+
+    <h2>Método location.assign</h2>
+    <p>O assign() método carrega um novo documento.</p>
+
+    <button onclick="myFunction()" type="button">Load a new document</button>
+
+    <p>
+        <b>Note</b>
+        A diferença entre assign() e replace():
+        
+        replace() remove o URL atual do histórico do documento.
+        
+        Com replace() não é possível usar "back" para navegar de volta ao documento original.
+    </p>
+
+    <h2>Método location.replace</h2>
+    <p>
+        O replace() método substitui o documento atual por um novo.
+    </p>
+
+    <button onclick="myFunctionDois()" type="button">Repleace document</button>
+
+
+    <h2>Método location.reload</h2>
+    <p>
+        O reload() método recarrega o documento atual.
+
+        O reload() método faz o mesmo que o botão de recarregar do seu navegador.
+    </p>
+
+    <button onclick="myFunctionTres()" type="button">Reloade page</button>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
