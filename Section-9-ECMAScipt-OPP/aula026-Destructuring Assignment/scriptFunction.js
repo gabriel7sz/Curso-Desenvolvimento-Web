@@ -2,7 +2,8 @@
  *  Contexto de Funções:
  * 
  *  Como passar arrays e objetos como parâmetros para funções.
- *  E dentro dessas funções capturar apenas o que é necessário desses arrays e objetos, utilziando o recurso de desestruturação.
+ *  E dentro dessas funções capturar apenas o que é necessário desses 
+ *  arrays e objetos, utilziando o recurso de desestruturação.
  * */ 
 
 // array
@@ -19,7 +20,11 @@ function teste(a, b) {
 teste(arr[0], arr[1]);
 
 /**
- * Simples, os parâmetros desse array estão sendo encaminhados de formas isoladas. Mas se na chamada da função fosse encaminhado diretamente o array, e no recebimento de parâmetros da função, ao invés de parâmetros isolados, utiliza-se o destructuing para isolar os parâmetros do array necessários para a lógica da função.
+ * Simples, os parâmetros desse array estão sendo encaminhados de formas isoladas. 
+ * Mas se na chamada da função fosse encaminhado diretamente o array, 
+ * e no recebimento de parâmetros da função, ao invés de parâmetros isolados, 
+ * utiliza-se o destructuing para isolar os parâmetros do array necessários 
+ * para a lógica da função.
  * 
  * Então fica assim:
  * */ 
@@ -32,7 +37,8 @@ function teste2([a, b]) {
 teste2(arr2);
 
 /**
- * Vale lemrar que na desestruturação, quando utilizados em conjunto com funções, pode-se pular valores ([a, b, , d , , f]) especificamente com arrays. 
+ * Vale lemrar que na desestruturação, quando utilizados em conjunto com funções, 
+ * pode-se pular valores ([a, b, , d , , f]) especificamente com arrays. 
  * 
  * Como tamém pode-se receber parâmetros default, caso o valor seja undefined. 
  * Como: function teste([a, b, c = 100]) {}
@@ -42,7 +48,8 @@ teste2(arr2);
 // objetos
 
 /**
- * Da mesma forma feita com arrays, pode-se desestruturar um objeto passado por parâmetro na assinatura da função ou métodos. 
+ * Da mesma forma feita com arrays, pode-se desestruturar um objeto passado 
+ * por parâmetro na assinatura da função ou métodos. 
  * */ 
 
 // exemplo sem destructuing:
