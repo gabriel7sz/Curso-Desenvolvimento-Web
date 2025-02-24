@@ -1,0 +1,35 @@
+    Estes dois temas se confudem muito, em alguns momentos 'internet' e 'web'são utilizados 
+como sinônimos, no entanto, são coisas em diferentes. Por isso é interessante ter a diferença
+em mente, até para que consiguimos desenvolver cada um desses temas futuramente.
+
+    A internet surgiu em 1969. Sendo criada pela Agência de Projetos de Pesquisas Avançadas
+de Defesas dos Estados Unidos, conhecida hoje como DARPA. Esta agência ao longo da história
+também já foi conhecida apenas como ARPA. Em certos momentos da história o 'D' de 'Defesa',
+foi descontinuado do nome da agência, mas posteriormente voltou.
+    Em 1969 desenvolveu o projeto ARPANET, que é conhecido como 'pai' da Internet como conhe-
+cemos hoje. A ARPANET foi criada em plena Guerra Fria com objetivos estritamente militares.
+Basicamente falando, o ojetivo da ARPANET era interligar as bases militares e laboratórios de
+pesquisas dos Estados Unidos e com isso, garantir que as comunicações norte americanas seriam
+mantidas mesmo em caso de ataques inimigos que destruíssem os meios convencionais de telecomu-
+nicação da época.   
+    Este projeto foi 100% financiado pelo governo norte americano. Já ao fim dos anos 70, a 
+ARPANET tinha crescido tanto que o seu protocolo de comunicação de pacotes original, chamado
+de Network Control Protocol ou NCP, tornou-se inadequado. Então começaram a usar um novo
+protocolo chamado Transfer Control Protocol Internet Protocol, ou TCP IP. Justamente após essa 
+atualização de protocolo, nos meados dos anos 80, que surge a Internet moderna conhecida hoje. 
+Em 1987 passá-se a ter uso comercial. Chegando ao Brasil somente em 1988.
+
+    Ou seja, a Internet possuí uma história e está evoluindo com o passar do tempo. A Internet
+consiste em conectar computadores, fazer com que se comuniquem. Para essa comunicação existir,
+diversos protocolos de comunicação diferentes são utilizados e explorando essa oportunidade de
+conectar computadores, em 1990 o Tim Berners-Lee que era um funcionário do CERN, European 
+Organization for Nuclear Research, resolveu tentar dar uma cara para a internet.
+    Justamente este ano que nasce a World Wibe Web, que em português siginifica: Rede Mundial
+de Computadores, conhecida como WWW ou WEB. É neste ponto que as pessoas começam a confundir,
+ou seja, enquanto o foco da internet é conectar computadores permitindo a troca de dados, 
+através de diversos protocolos, o foco da WEB, consiste em um serviço que utiliza a internet 
+para existir.
+    Basicamente a WEB consiste em sistemas de documentos escritos em hipertexto que são inter-
+ligados e executados na internet. Sendo essa interação com hipertexto feita através do browsers.
+Para fins de desenvolvimento WEB, alguns protocolos de comunicação disponíveis na Internet são
+necessários, porém, a internet por si só é INDEPENDENTE de aplicações WEB.
