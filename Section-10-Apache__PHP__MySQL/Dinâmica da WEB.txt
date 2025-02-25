@@ -1,0 +1,40 @@
+    A dinâmica da WEB, do ponto de vista de desenvolvimento possui alguns conceitos e 
+siglas que geram uma confusão.
+    A World Wibe Web é um serviço que roda na internet e provê acesso a conteúdos de 
+hipertexto e hipermídia. Esses conteúdos são acessados através de browsers, conhecidos
+como navegadores. 
+    O hipertexto é um termo utilizado para designar documentos eletrônicos textuais que
+se conectam através de links. Se parar-mos para refletir como a WEB funciona, na essência,
+é um emaranhado de páginas, cujo acesso é realizado por meio de links. O que remete a 
+idéia de navegação.
+    Quando associamos hipertextos com outras mídias como imagens, vídeos, sons, surge o 
+conceito de hipermídia. Quando acessamos um site na internet visitamos no browser a sua
+Uniform Ressource Location, que em português significa localizador padrão de recursos.
+Tamém conhecida como URL, ou endereço do site. Ao fazer essa entrada de URL no browser, o
+próprio browser se encarrega de montar uma requisição; esta requisição é feita com base no
+protocolo de comunicação pré definido o Report Transfer Protocol ou simplismente HTTP.
+    Como qualquer protocolo de comunicação o HTTP visa estabelecer algumas regras de 
+comunicação. Basicamente falando, para atender esse protocolo é preciso saber quem está 
+fazendo a solicitação, ou seja, quem é o browser cliente?. O que está sendo solicitado, 
+ou seja, qual que é a URL?. E quem proverá o resultado daquilo que está sendo solicitado, 
+ou seja, quem é o servidor WEB daquele conteúdo?.
+    Então ao digitar um endereço de um site no browser e clicar no enter, o próprio browser
+gera uma requisição seguindo o protocolo HTTP. A requisição então segue pela internet até
+ser receida pelo servidor WEB destino. Se por ventura o endereço estiver errado, existe uma
+grande possilidade de estarmos fazendo uma requisição de um endereço que não existe. 
+Ou seja,não existe um servido WEB na 'outra ponta'. Nesse caso, será apresentado no browser
+uma mensagem de que a página WEB não está disponível. 
+    Porém se for digitado um endereço de um servidor WEB registrado e operante, o servidor 
+receberá a requisição feita pelo browser  cliente e indentificará o que está sendo 
+requisitado, efetuando o processamento necessário,e assim, devolve para o browser cliente 
+em forma de resposta.
+    Esse processo portanto, estabelece a dinâmica da web que é baseada em requisição e
+resposta.
+    Além de um protocolo de comunicação, também há a nessecidade da criação de uma linguagem
+de marcação para definir as regras de escrita de conteúdos de hipertexto e hipermídia
+trafegados na internet. Como o próprio HyperText Markup Language o HTML.
+    Também ao lado do servidor, páginas web podem ser produzidas de forma estática ou 
+dinâmica. Sendo páginas estáticas, escritas em HTML com conteúdo 'hardcode', ou seja, 
+conteúdo fixo. E páginas dinâmicas são páginas HTML criadas em tempos de requisição.
+A diferença nesse caso, é que boa parte do conteúdo HTML é prouzido através e alguma 
+linguagem de programação como o PHP por exemplo.
